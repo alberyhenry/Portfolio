@@ -1,0 +1,171 @@
+*{
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.mynavbar .info{
+  height: auto;
+
+  display: flex;
+  align-items:initial;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.mynavbar .info > div{
+  flex-basis: 200px;
+  max-height: 100%;
+  display: flex;
+  flex-grow:1;
+  margin-bottom: 10px;
+  
+}
+.mynavbar .info > div:last-child{
+  flex-grow: 10;
+  background: url('../img/working3.jpg') no-repeat center center;
+  background-size: cover;
+  flex-basis: 400px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.mynavbar .info .my-pricture{
+  height: 400px;
+}
+.mynavbar .info .my-pricture img{
+  height: 100%;
+  width: 100%;
+}
+.mynavbar .info .menu{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  flex-direction: row;
+}
+
+.mynavbar .info .menu li{
+  list-style: none;
+  height: 80px;
+  line-height: 80px;
+  width: 30%;
+  text-align: center;
+  font-weight: 600;
+  margin-right: 2px;
+  flex-grow: 1;
+  border-radius: 2px;
+  background-color: #95cfd8;
+}
+.mynavbar .info .menu li:last-child{
+  margin-right: none;
+}
+.mynavbar .info .menu li:hover{
+  cursor: pointer;
+  background-color: #17a2b8;
+}
+.mynavbar .info .menu li a{
+  color: #000;
+  text-decoration: none;
+}
+/*Details*/
+.details{
+  padding-top: 20px;
+}
+
+.details .info{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.details .info > div{
+  flex-basis: 400px;
+  flex-grow: 1;
+  margin-bottom: 60px;
+}
+.details .info h2{
+  position: relative;
+  margin-bottom: 30px;
+}
+.details .info h2:after{
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: #17a2b8;
+  left: 0;
+  bottom: -10px;
+}
+.details .info .languages{
+  padding-right: 100px;
+}
+.details .info .languages h2{
+  margin-bottom: 36px;
+}
+.details .info .languages > div{
+  height: 25px;
+  border-radius: 0;
+  background-color: #fff;
+}
+.details .info .intersets ul{
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.details .info .intersets ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.details .info .intersets ul li img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+.details .info .intersets ul li p{
+  text-align: center;
+}
+.portfolio .my-project{
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio .my-project > div{
+  flex-basis: 400px;
+  height: 200px;
+  border: 1px solid #17a2b8;
+  padding: 5px;
+  margin: 10px;
+  transition: all 0.3s ease ;
+}
+.portfolio {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.portfolio h2{
+  margin-bottom: 20px;
+}
+.portfolio .my-project > div img{
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.portfolio .my-project > div:hover{
+  transform: scale(1.02);
+  border-color: #17a2b8;
+  cursor: pointer;
+}
+
+.details  h1, .portfolio h2, .contact h2{
+  border-bottom: 1px solid #17a2b8;
+  border-right: 1px solid #17a2b8;
+  display: inline-block;
+  padding: 0 8px 8px 0;
+}
+/* contact */
+.contact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contact h2{
+  margin-bottom: 20px;
+}
